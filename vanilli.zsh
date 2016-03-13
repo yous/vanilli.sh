@@ -39,9 +39,10 @@ zmodload zsh/complist
 # Menu selection will be started unconditionally.
 zstyle ':completion:*' menu select
 
-# Try smart-case completion, then partial-word, and then substring completion.
+# Try smart-case completion, then case-insensitive, then partial-word, and then
+# substring completion.
 # See http://zsh.sourceforge.net/Doc/Release/Completion-Widgets.html#Completion-Matching-Control.
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Z}{a-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # Make sure the terminal is in application mode, which zle is active. Only then
 # are the values from $terminfo valid.
