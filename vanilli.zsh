@@ -113,3 +113,30 @@ SAVEHIST=10000
 # If this option is unset, output flow control via start/stop characters
 # (usually assigned to ^S/^Q) is disabled in the shell's editor.
 unsetopt flow_control
+
+# =============================================================================
+# Key Bindings
+# =============================================================================
+
+# See
+# http://pubs.opengroup.org/onlinepubs/7908799/xcurses/terminfo.html#tag_002_001_003_003
+# for the table of terminfo, and see
+# http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Standard-Widgets
+# for standard widgets of zsh.
+
+# Home
+[ -n "${terminfo[khome]}" ] && bindkey "${terminfo[khome]}" beginning-of-line
+# End
+[ -n "${terminfo[kend]}" ] && bindkey "${terminfo[kend]}" end-of-line
+# Backspace
+[ -n "${terminfo[kbs]}" ] && bindkey "${terminfo[kbs]}" backward-delete-char
+# Delete
+[ -n "${terminfo[kdch1]}" ] && bindkey "${terminfo[kdch1]}" delete-char
+# Up-arrow
+[ -n "${terminfo[kcuu1]}" ] && bindkey "${terminfo[kcuu1]}" up-line-or-history
+# Down-arrow
+[ -n "${terminfo[kcud1]}" ] && bindkey "${terminfo[kcud1]}" down-line-or-history
+# Left-arrow
+[ -n "${terminfo[kcub1]}" ] && bindkey "${terminfo[kcub1]}" backward-char
+# Right-arrow
+[ -n "${terminfo[kcuf1]}" ] && bindkey "${terminfo[kcuf1]}" forward-char
