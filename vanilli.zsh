@@ -91,6 +91,10 @@ setopt hist_expire_dups_first
 # contiguous.
 setopt hist_find_no_dups
 
+# Do not enter command lines into the history list if they are duplicates of the
+# previous event.
+setopt hist_ignore_dups
+
 # Whenever the user enters a line with history expansion, don't execute the line
 # directly; instead, perform history expansion and reload the line into the
 # editing buffer.
