@@ -35,6 +35,8 @@ WORDCHARS=''
 
 # See http://zsh.sourceforge.net/Doc/Release/Completion-System.html.
 zmodload zsh/complist
+autoload -Uz compinit
+compinit
 
 # Menu selection will be started unconditionally.
 zstyle ':completion:*' menu select
