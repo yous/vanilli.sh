@@ -6,32 +6,47 @@ A lightweight start point of shell configuration, instead of starting from
 scratch, copying some random configuration files, or using the default of heavy
 frameworks.
 
-# Installation
+## Installation
 
-## [Antibody](https://github.com/getantibody/antibody)
+### [Antibody](https://github.com/getantibody/antibody)
 
 ``` zsh
 antibody bundle yous/vanilli.sh
 ```
 
-## [Antigen](https://github.com/zsh-users/antigen)
+### [Antigen](https://github.com/zsh-users/antigen)
 
 ``` zsh
 antigen bundle yous/vanilli.sh
 ```
 
-## [zgen](https://github.com/tarjoilija/zgen)
+### [zgen](https://github.com/tarjoilija/zgen)
 
 ``` zsh
 zgen load yous/vanilli.sh
 ```
 
-## [zplug](https://github.com/zplug/zplug)
+### [zplug](https://github.com/zplug/zplug)
 
 ``` zsh
 zplug "yous/vanilli.sh"
 ```
 
-# License
+### [Zplugin](https://github.com/zdharma/zplugin)
+
+``` zsh
+zplugin light yous/vanilli.sh
+```
+
+## Completion system
+
+To enable the completion system, add following lines after loading this plugin.
+
+``` zsh
+autoload -Uz compinit
+compinit
+```
+
+## License
 
 Copyright © Chayoung You. See [LICENSE.txt](LICENSE.txt) for details.
