@@ -66,7 +66,7 @@ fi
 [ -n "${terminfo[kcbt]}" ] && bindkey "${terminfo[kcbt]}" reverse-menu-complete
 
 # Set LS_COLORS.
-if [ -x /usr/bin/dircolors ]; then
+if builtin which dircolors &>/dev/null; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 # If the zsh/complist module is loaded, this style can be used to set color
