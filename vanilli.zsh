@@ -81,6 +81,10 @@ fi
 # History
 # =============================================================================
 
+# Perform textual history expansion, csh-style, treating the character '!'
+# specially.
+unsetopt bang_hist
+
 # If the internal history needs to be trimmed to add the current command line,
 # setting this option will cause the oldest history event that has a duplicate
 # to be lost before losing a unique event from the list.
