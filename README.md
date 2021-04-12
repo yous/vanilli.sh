@@ -26,16 +26,16 @@ antigen bundle yous/vanilli.sh
 zgen load yous/vanilli.sh
 ```
 
+### [Zinit](https://github.com/zdharma/zinit)
+
+``` zsh
+zinit light yous/vanilli.sh
+```
+
 ### [zplug](https://github.com/zplug/zplug)
 
 ``` zsh
 zplug "yous/vanilli.sh"
-```
-
-### [Zplugin](https://github.com/zdharma/zplugin)
-
-``` zsh
-zplugin light yous/vanilli.sh
 ```
 
 ## Completion system
