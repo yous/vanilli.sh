@@ -148,3 +148,5 @@ unsetopt flow_control
 [ -n "${terminfo[kcub1]}" ] && bindkey "${terminfo[kcub1]}" backward-char
 # Right-arrow
 [ -n "${terminfo[kcuf1]}" ] && bindkey "${terminfo[kcuf1]}" forward-char
+# Ctrl-U
+bindkey "^U" backward-kill-line
