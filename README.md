@@ -8,12 +8,6 @@ frameworks.
 
 ## Installation
 
-### [Antibody](https://github.com/getantibody/antibody)
-
-``` zsh
-antibody bundle yous/vanilli.sh
-```
-
 ### [Antigen](https://github.com/zsh-users/antigen)
 
 ``` zsh
@@ -26,7 +20,7 @@ antigen bundle yous/vanilli.sh
 zgen load yous/vanilli.sh
 ```
 
-### [Zinit](https://github.com/zdharma/zinit)
+### [Zinit](https://github.com/zdharma-continuum/zinit)
 
 ``` zsh
 zinit light yous/vanilli.sh
